@@ -1,0 +1,105 @@
+*{
+	font-family: $fontFamily;
+	color: $fontColor;
+	padding: 0;
+	margin: 0;
+		}
+
+html{
+	font-size: 62.5%;
+		}
+
+
+body{
+	background: $background;
+	overflow-x: hidden 100%;
+		}
+
+
+h3{
+	font-size: $textMd;
+	padding-bottom: 4vh;
+	animation-name: textAlpha;
+	animation-duration: 3s;
+	@media (min-width: 768px){
+		font-size: $textXl;
+
+		}
+
+	@keyframes textAlpha{
+	from {opacity: 0;}
+	to{opacity: 2;}
+	}
+
+}
+
+header a img{
+	padding-top: 1vh;
+		}
+
+iframe{
+	width: 100%;
+	height: 20vh;
+	margin-top: 2%;
+	@media (min-width: 1024px){
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%; 
+	}
+		}
+
+.card-body{
+	background-color: $cardColor;
+}
+
+
+input{
+	background-color: $whiteColor;
+    color: $fontColor;
+    border: 2px solid $divColor;
+	border-radius: 12px;
+	margin-top: 2%;
+		
+	&:hover{
+	background: $imputColor;
+	transition: all 2s;
+	cursor: text;
+		} 
+	}
+
+
+#div{
+	background-color: $divColor;
+	font-size: $textSm;
+	@media (min-width: 1024px){
+		font-size: $textMd;
+			}
+		}
+
+#p{
+	font-size: $textS;
+	overflow: hidden;
+	line-height: $lineP;
+	text-align: center;
+	padding: 2%;
+	@media (min-width: 768px){
+		font-size: $textLg;
+		line-height: $lineForm;
+	}
+		@media (min-width: 1024px){
+			font-size: $textLg;	
+		line-height: $linePXlarge;
+		padding: 3%;
+			
+			}
+
+		}
+
+
+#h1{
+	font-size: $textXl;
+	@media (min-width: 768px){
+	font-size: $textXxl;
+		}
+	}
+

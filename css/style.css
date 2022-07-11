@@ -136,12 +136,6 @@ input:hover{
 	justify-content: center;
 		}
 
-#figure{
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-		}
-
 #p{
 	font-size: 1.4rem;
 	overflow: hidden;
@@ -206,7 +200,7 @@ input:hover{
 			}
 
 	#pie{
-		font-size: 1.7rem;
+		font-size: 1.8rem;
 			}
 
 	nav a img {

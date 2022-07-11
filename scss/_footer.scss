@@ -1,0 +1,59 @@
+#pie{
+	margin-top: 10vh;
+	font-size: $textXxs; 
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	@media (min-width: 768px){
+		font-size: $textSm;
+			}
+			@media (min-width: 1024px){
+				font-size: $textM;
+		}
+}
+
+footer img{
+	width: 7vh;
+	margin: 2vh;
+	@media (min-width: 768px){
+		width: 9vh;
+		margin: 2vh;
+			}
+
+		@media (min-width: 1024px){
+			width: 15vh;
+	
+			}
+
+		}
+		
+			footer a img{
+			width: 4vh;
+			display: inline-flex;
+			align-content: space-around;
+			@media (min-width: 768px){
+				width: 6vh;
+			}
+
+			@media (min-width: 1024px){
+				width: 8vh;
+	
+			}
+
+			@media (min-width: 1200px){
+				width: 9vh;
+				margin: 3vh;
+
+				}
+
+			}
+					
+					footer ul li{
+						list-style: none;
+						text-decoration: none;
+						text-align: center;
+							}
+						
+
+
+
