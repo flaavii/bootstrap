@@ -6,3 +6,22 @@
 	display: flex;
 	flex-direction: column;
 		}
+
+input{
+	background-color: map-get($map:$paleta, $key:'whiteColor'); 
+    border: 2px solid map-get($map:$paleta, $key:'divColor');
+	border-radius: 12px;
+	margin-top: 2%;
+		
+	&:hover{
+	background: map-get($map:$paleta, $key:'imputColor');
+	transition: all 2s;
+	cursor: text;
+		} 
+	}
+
+.btn-form {
+	@extend input;
+	border: 2.4px solid map-get($map:$variables, $key:'colorCieloII'); 
+
+}

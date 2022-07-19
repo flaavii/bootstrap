@@ -1,6 +1,6 @@
 *{
 	font-family: $fontFamily;
-	color: $fontColor;
+	color: map-get($map:$variables, $key:'logoOscuroII');
 	padding: 0;
 	margin: 0;
 		}
@@ -11,10 +11,9 @@ html{
 
 
 body{
-	background: $background;
+	background: map-get($map:$paleta, $key:'background');
 	overflow-x: hidden 100%;
 		}
-
 
 h3{
 	font-size: $textMd;
@@ -22,7 +21,7 @@ h3{
 	animation-name: textAlpha;
 	animation-duration: 3s;
 	@media (min-width: 768px){
-		font-size: $textXl;
+		font-size: $textXll;
 
 		}
 
@@ -33,9 +32,45 @@ h3{
 
 }
 
-header a img{
-	padding-top: 1vh;
+header div img{
+	padding-top: 0.5vh;
 		}
+
+
+.img-wrapper {
+position: relative;
+overflow: hidden;
+margin: 0 auto;
+}
+
+.img-move {
+position: absolute;
+
+}
+
+.img-move-1 {
+left: 0;
+@media (min-width: 768px){
+width: 90%;
+}
+}
+
+.img-move-2 {
+left: 2%; 
+bottom: 10%;
+border-color: map-get($map:$variables, $key:'logoOscuro');
+border-width:1.9px;
+border-style: solid;
+padding: 0;
+width: 99%;
+
+@media (min-width: 768px){
+	width: 96%; 
+	border-width: 2.8px;
+	border-radius: 2px;
+	bottom: 7%;
+	}
+}
 
 iframe{
 	width: 100%;
@@ -48,56 +83,62 @@ iframe{
 	}
 		}
 
-.card-body{
-	background-color: $cardColor;
+.carouselCustom {
+	border-radius:4px;
+	@media (min-width: 768px){
+	padding: 0 10%;
+}
 }
 
+.card-body{
+	background-color: map-get($map:$paleta, $key:'cardColor');
 
-input{
-	background-color: $whiteColor;
-    color: $fontColor;
-    border: 2px solid $divColor;
-	border-radius: 12px;
-	margin-top: 2%;
-		
-	&:hover{
-	background: $imputColor;
-	transition: all 2s;
-	cursor: text;
-		} 
 	}
 
-
 #div{
-	background-color: $divColor;
+	background-color: map-get($map:$paleta, $key:'divColor');
+	color: map-get($map:$variables, $key:'logoOscuroII');
 	font-size: $textSm;
 	@media (min-width: 1024px){
 		font-size: $textMd;
 			}
 		}
 
+
 #p{
 	font-size: $textS;
 	overflow: hidden;
 	line-height: $lineP;
 	text-align: center;
-	padding: 2%;
+	padding: 5% 8% 0 8%;
+	@media (min-width: 490px){
+		font-size: $textSm;
+				}
 	@media (min-width: 768px){
-		font-size: $textLg;
+		font-size: $textM;
 		line-height: $lineForm;
 	}
 		@media (min-width: 1024px){
 			font-size: $textLg;	
-		line-height: $linePXlarge;
-		padding: 3%;
+			line-height: $linePXlarge;
 			
 			}
 
 		}
 
+.p2 {
+	@extend #p;
+	padding: 0% 8% 0 8%; 
+	} 
+
 
 #h1{
 	font-size: $textXl;
+	font-weight: $bold;
+	@media (min-width: 490px){
+	font-size: $textXll;
+		}
+	
 	@media (min-width: 768px){
 	font-size: $textXxl;
 		}
